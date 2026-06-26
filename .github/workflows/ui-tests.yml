@@ -13,7 +13,7 @@ permissions:
 jobs:
   
   test:
-    runs-on: ubuntu-latest
+    runs-on: [self-hosted, Linux, ARM64, leopere, local]
     if: ${{ github.repository_owner == 'frappe' }}
     timeout-minutes: 60
 
