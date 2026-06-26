@@ -6,7 +6,7 @@ on:
   pull_request: {}
 jobs:
   tests:
-    runs-on: ubuntu-20.04
+    runs-on: [self-hosted, Linux, ARM64, leopere, local]
     services:
       redis-cache:
         image: redis:alpine
